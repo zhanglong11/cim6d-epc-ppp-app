@@ -1,0 +1,133 @@
+<template>
+  <view class="main">
+    <scroll-view class="scroll-roll" scroll-y>
+      <view class="main-body">
+        <view>
+          <view class="titleStatus">
+            <h3>施工周报</h3>
+            <view class="statusBox"> <uni-status :options="statusList" :value="info.status"></uni-status></view>
+          </view>
+          <uni-card isForm title="">
+            <uni-form-item label="创建人">
+              <view class="disabled">{{ info.creatorName }}</view>
+            </uni-form-item>
+            <uni-form-item label="创建时间">
+              <view class="disabled">{{ info.createTime }}</view>
+            </uni-form-item>
+          </uni-card>
+          <uni-card isForm title="">
+            <uni-form-item label="周报期号">
+              <view class="disabled">{{ info.periodName }}</view>
+            </uni-form-item>
+            <uni-form-item label="报告起始时间">
+              <view class="disabled">{{ info.startDate | ymd }}</view>
+            </uni-form-item>
+            <uni-form-item label="报告结束时间">
+              <view class="disabled">{{ info.endDate | ymd }}</view>
+            </uni-form-item>
+            <uni-form-item label="编制">
+              <view class="disabled">{{ info.authorNames }}</view>
+            </uni-form-item>
+            <uni-form-item class="file-item" label="附件" prop="fileIds">
+              <uni-attachment v-model="info.fileIds"></uni-attachment>
+            </uni-form-item>
+          </uni-card>
+          <uni-card isForm title="">
+            <uni-form-item label="施工进度情况" type="textarea" align="left" class="block-item">
+              <view class="disabled">{{ info.constructionScheduleSituation }}</view>
+            </uni-form-item>
+            <uni-form-item label="下周施工计划" type="textarea" align="left" class="block-item">
+              <view class="disabled">{{ info.nextConstructionPlan }}</view>
+            </uni-form-item>
+            <uni-form-item label="重大事项" type="textarea" align="left" class="block-item">
+              <view class="disabled">{{ info.majorEvents }}</view>
+            </uni-form-item>
+            <uni-form-item label="质量问题及建议" type="textarea" align="left" class="block-item">
+              <view class="disabled">{{ info.qualityIssueSuggest }}</view>
+            </uni-form-item>
+            <uni-form-item label="现场安全生产工作检查记录" type="textarea" align="left" class="block-item">
+              <view class="disabled">{{ info.safetyCheckRecord }}</view>
+            </uni-form-item>
+            <uni-form-item label="现阶段危险源识别清单" type="textarea" align="left" class="block-item">
+              <view class="disabled">{{ info.hazardSourceItem }}</view>
+            </uni-form-item>
+            <uni-form-item label="现场安全隐患整改落实情况" type="textarea" align="left" class="block-item">
+              <view class="disabled">{{ info.safetyRectifySituation }}</view>
+            </uni-form-item>
+            <uni-form-item label="疫情防控情况" type="textarea" align="left" class="block-item">
+              <view class="disabled">{{ info.epidemicPreventionControl }}</view>
+            </uni-form-item>
+            <uni-form-item label="现场形象进度图片" type="textarea" align="left" class="block-item">
+              <view class="disabled">
+                <uni-attachment v-model="info.visualScheduleImageIds" uploadType="image"></uni-attachment>
+              </view>
+            </uni-form-item>
+          </uni-card>
+        </view>
+        <view v-if="info.status === 0" class="btn-wrapper">
+          <button class="button" type="primary" :loading="isLoading">
+            删除
+          </button>
+        </view>
+        <!-- 审批记录 start -->
+        <uni-check-detail :id="id"></uni-check-detail>
+        <!-- 审批记录 end -->
+        <!-- 通用审批 start -->
+        <uni-check-card :id="id" ref="checkCard" />
+        <!-- 通用审批 end -->
+      </view>
+    </scroll-view>
+  </view>
+</template>
+
+<script>
+import Api from '@/pages/epcPpp/informationManage/api/constructionWeekLog'
+import { mapGetters } from 'vuex'
+import statusList from '@/pages/epcPpp/informationManage/lib/statusList'
+export default {
+  name: 'EpcPPPConstructionWeekLogDetail',
+  components: {},
+  data() {
+    return {
+      statusList,
+      info: {},
+      id: '',
+      isLoading: false
+    }
+  },
+  computed: {
+    ...mapGetters(['projectId'])
+  },
+  //草稿是跳转到编辑页面
+  onNavigationBarButtonTap(obj) {
+    this.$utils.toUrl(`/pages/epcPpp/informationManage/constructionWeekLog/add?id=${this.id}`)
+  },
+  onLoad(options) {
+    this.id = options.id
+    this.init()
+  },
+  onShow() {},
+  mounted() {},
+  methods: {
+    //初始化页面参数
+    init() {
+      this.getDetail()
+    },
+    //获取详情
+    async getDetail() {
+      let res = await Api.getDetail(this.id)
+      this.info = { ...res.data }
+      if (res.data.status !== 0) {
+        this.$utils.setNavButton(0, {
+          text: '',
+          fontSize: 0
+        })
+      }
+    }
+  }
+}
+</script>
+
+<style lang="less" scoped>
+@import url('../detail.less');
+</style>

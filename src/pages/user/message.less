@@ -1,0 +1,122 @@
+@import '~@/styles/common.less';
+
+.arrow-right {
+  width: 15px;
+  height: 30px;
+  background: url('@/static/images/icon/@2x/icon-arrow-right.png') no-repeat left center;
+  background-size: 15px 30px;
+  margin-left: 25px;
+}
+
+.main-body {
+  padding: 33px 25px 41px;
+  padding-top: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+}
+
+.card {
+  padding-top: 0;
+  border-radius: 20px;
+
+  .card-body {
+    padding: 0px 30px;
+    font-size: 13px;
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 8px 20px 12px;
+      position: relative;
+
+      & > * {
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+
+      .message-type {
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        line-height: 76px;
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+
+        &.quality {
+          background-color: #ec6255;
+        }
+
+        &.safe {
+          background-color: #1c83d0;
+        }
+
+        &.material {
+          background-color: #f3a409;
+        }
+
+        &.progress {
+          background-color: #45af7e;
+        }
+
+        &.construction {
+          background-color: #18aa61;
+        }
+
+        &.step {
+          background-color: #2883d6;
+        }
+
+        &.approval {
+          background-color: #1c83d0;
+        }
+      }
+
+      .messsage-info {
+        padding: 0 20px;
+        flex-shrink: 1;
+        flex-grow: 1;
+
+        .title {
+          color: #484848;
+          font-size: 13px;
+          font-weight: bold;
+          line-height: 40px;
+          // white-space: nowrap;
+          // overflow: hidden;
+          // text-overflow: ellipsis;
+        }
+
+        .detail {
+          font-size: 12px;
+          color: #7e7e7e;
+          line-height: 32px;
+          padding: 4px 0;
+        }
+      }
+    }
+
+    .item + .item::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      transform: scaleY(0.5);
+      background-color: @line;
+      position: absolute;
+      top: 0%;
+      left: 0;
+    }
+  }
+}
+.uni-badge{
+  padding: 8px 0;
+  height: unset;
+}
+.uni-badge--error {
+  background-color: #fb4938;
+}

@@ -1,0 +1,35 @@
+.drawer {
+  display: flex;
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 10px 100px;
+    border-bottom: 1px solid #eee;
+    font-weight: 700;
+    font-size: 14px;
+    height: 88rpx;
+    position: relative;
+    .icon {
+      color: @h2FontColor;
+      font-size: 20px;
+    }
+    .close,
+    .save {
+      font-weight: normal;
+      color: @headerColor;
+      position: absolute;
+    }
+    .close {
+      left: 20rpx;
+    }
+    .save {
+      right: 20rpx;
+    }
+    .title {
+      font-size: 16px;
+      flex: 1;
+      text-align: center;
+      .ellipsis;
+    }
+  }
+}

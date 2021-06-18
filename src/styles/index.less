@@ -1,0 +1,150 @@
+@import './mp-vue.css';
+@import url('~@/styles/common.less');
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  .card-title {
+    margin-top: 30px;
+    padding-left: 10px;
+
+    & + .card {
+      margin-top: 20px
+    }
+  }
+}
+
+.submit-button-wrapper {
+  padding: 36px 5px 5px;
+  margin-bottom: 60px;
+
+  .button {
+    background: linear-gradient(90deg, rgba(50, 149, 250, 1) 0%, rgba(17, 106, 220, 1) 100%);
+    box-shadow: 0px 9px 13px 0px rgba(9, 52, 107, 0.14);
+    border-radius: 45px;
+  }
+}
+
+
+.tabs-wrap{
+  margin-top: -30px;
+  background-color: #fff;
+  padding: 31px 41px;
+  border-radius:30px;
+  box-shadow:0 4px 6px 0 rgba(79,85,101,0.06);
+  overflow: visible;
+  z-index:2;
+}
+
+.search-wrap-primary{
+  background-color: #496FE5;
+  padding: 25px 0;
+}
+
+.arc{
+  width: 100%;
+  height: 30px;
+  border-radius: 0 0 30px 30px;
+  box-shadow:0 4px 6px 0 rgba(79,85,101,0.11);
+  margin-bottom: 10px;
+}
+
+uni-page {
+  .uni-drawer-custom {
+    display: flex;
+    .uni-drawer__content {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #eee;
+      font-weight: 800;
+      font-size: 14px;
+      height: 68px;
+      background: rgba(238, 238, 238, 1);
+      color: #757575;
+      .icon {
+        color: @h2FontColor;
+        font-size: 20px;
+      }
+    }
+    .content {
+      padding: 24px;
+      .label {
+        margin-bottom: 21px;
+        font-weight: normal;
+        color: #757575;
+        font-size: 13px;
+      }
+      .input {
+        border: 1px solid #ddd;
+        height: 64px;
+        line-height: 64px;
+        text-indent: 12px;
+        border-radius: 4px;
+      }
+      .input-holder {
+        color: #ccc;
+        font-size: 14px;
+      }
+      .item-line {
+        margin-bottom: 32px;
+        height: 2px;
+        background: rgba(241, 241, 241, 1);
+      }
+    }
+    .foot {
+      padding: 26px 40px;
+      display: flex;
+      height: 138px;
+      background: #fff;
+      border-top: 1px solid @line;
+      .btn-wrap {
+        margin: 0 14px;
+        border-radius: 80px;
+        border-color: @headerColor;
+        color: @headerColor;
+        font-size: 14px;
+        &.primary {
+          background: @headerColor;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.uni-textarea-placeholder{
+  color:@placeholderColor;
+}
+.uni-card.attachmentInfo {
+  .form-item {
+    /deep/ .form-label {
+      min-width: 120rpx;
+    }
+  }
+}
+.H100{
+  height: 100vh;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color:transparent;
+  }
+
+}
+
+.jcb{
+  display: flex;
+  justify-content: space-between;
+}

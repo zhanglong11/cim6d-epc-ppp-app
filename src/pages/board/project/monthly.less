@@ -1,0 +1,23 @@
+@import url('../../../styles/common.less');
+
+
+.main-body {
+  font-size: @h2FontSize;
+  padding-bottom: 41px;
+  
+}
+.custom-tabs {
+  &.border-bottom::before{
+    background-color: #dcdcdc;
+    height: 2px;
+  }
+  /deep/.s-tab-nav-view {
+    display: flex;
+    justify-content: center;
+    .s-tab-nav {
+      &:not(:first-child) {
+        margin-left: 40rpx;
+      }
+    }
+  }
+}

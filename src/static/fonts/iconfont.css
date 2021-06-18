@@ -1,0 +1,82 @@
+@font-face {font-family: "iconfont";
+  src: url('~@/static/fonts/iconfont.ttf');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-edit:before {
+  content: "\e60e";
+}
+.icon-tianjia:before {
+  content: "\e613";
+}
+
+.icon-shanchu:before {
+  content: "\e608";
+}
+
+.icon-gengduo:before {
+  content: "\e60a";
+}
+
+.icon-shaixuanx:before {
+  content: "\e607";
+}
+
+.icon-wenjiangeshitongyong:before {
+  content: "\e62a";
+}
+
+.icon-arrow-right:before {
+  content: "\e651";
+}
+
+.icon-wenjiangeshiZIP:before {
+  content: "\e65b";
+}
+
+.icon-wenjiangeshi_ppt:before {
+  content: "\e632";
+}
+
+.icon-wenjiangeshi_doc:before {
+  content: "\e631";
+}
+
+.icon-wenjiangeshi_xls:before {
+  content: "\e633";
+}
+
+.icon-wenjiangeshi_psd:before {
+  content: "\e634";
+}
+
+.icon-wenjiangeshi:before {
+  content: "\e66b";
+}
+
+.icon-wenjiangeshi_xlsx:before {
+  content: "\e708";
+}
+
+.icon-arrow-left:before {
+  content: "\e709";
+}
+
+.icon-alarm:before {
+  content: "\e619";
+}
+
+.icon-bell:before {
+  content: "\e623";
+}
+
+.icon-search:before {
+  content: "\e624";
+}
+

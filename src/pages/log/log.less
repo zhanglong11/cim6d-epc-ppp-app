@@ -1,0 +1,128 @@
+@import '~@/styles/common.less';
+@import '~@/styles/list.less';
+
+.scroll-roll {
+  margin-top: -30px;
+}
+
+.main {
+  .main-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .cardWrapper {
+      flex-grow: 1;
+      position: relative;
+    }
+
+    .card-body {
+      .titleName {
+        white-space: pre-wrap;
+        //text-overflow: ellipsis;
+        //overflow: hidden;
+        //word-break: break-all;
+      }
+    }
+
+  }
+
+  .calendar-wrap {
+    position: relative;
+
+    .calendar-view-mode-control {
+      image {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+      }
+
+      position: absolute;
+      z-index: 2;
+      top: 24px;
+      right: 20px;
+      color: #4778f3;
+      font-size: 12px;
+    }
+  }
+
+  .mpvue-calendar {
+    border-radius: 40px;
+
+    /deep/ .mc-day.pin {
+      font-size: 10px !important;
+    }
+
+    /deep/ .selected.mc-today-element {
+      /deep/span {
+        background-color: #3b75fb;
+        border-radius: 50%;
+      }
+
+
+    }
+
+  }
+
+  /deep/ .calendar-info>div.mc-month .mc-month-inner>span {
+    height: 48px;
+  }
+
+  /deep/ .pin {
+    .slot-element {
+      width: 100%;
+      text-align: center;
+      color: #4778f3;
+      position: relative;
+      top: -10px;
+      height: 10px;
+      line-height: 10px;
+    }
+  }
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .flex-left {
+    flex: 1 50%;
+  }
+
+  .uni-status {
+    margin-left: 20rpx;
+  }
+}
+
+.card-info {
+  flex: 1;
+  width: 50%;
+  position: relative;
+
+  .flex-item {
+    padding: 0 10rpx;
+    display: flex;
+    align-items: flex-start;
+
+    .flex-item-label {
+      flex-basis: auto;
+      white-space: nowrap;
+
+    }
+
+    &.title {
+      flex-basis: 100%;
+    }
+  }
+
+}
+
+.circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
+}

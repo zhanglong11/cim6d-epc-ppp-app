@@ -1,0 +1,112 @@
+@import "~@/styles/common.less";
+@colorRed: #ff0000;
+@colorBlue: #0079fe;
+
+.main {
+  .uni-searchbar {
+    margin: 0 0 25px;
+  }
+  .safe-list {
+    li {
+      width: 700px;
+      height: auto;
+      position: relative;
+      margin-bottom: 25px;
+      section {
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .isQualified {
+          .circle {
+            background: @colorBlue;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 4px;
+          }
+
+          .red {
+            background: @colorRed;
+            margin-top: -4px;
+          }
+        }
+
+        h2 {
+          font-size: 14px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          span{
+            width: 5px;
+            height: 26px;
+            margin-right: 10px;
+            border-radius:2.5px;
+          }
+        }
+
+        p {
+          margin-top: 14px;
+          color: #989898;
+
+        }
+      }
+      .circle{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        border-radius:50%;
+        vertical-align: middle;
+      }
+
+      p,
+      span {
+        font-size: 12px;
+      }
+      .planStatus{
+        margin: 0 31px 20px 31px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #989898;
+      }
+      footer {
+        margin: 0 31px;
+        display: flex;
+        line-height: 76px;
+        justify-content: space-between;
+        border-top: 1px solid #f1f1f1;
+
+        span {
+          color: #4f6481;
+        }
+      }
+    }
+  }
+}
+.cardList{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .list{
+    width: 80%;
+    .title{
+      display: flex;
+      align-items: flex-start;
+      span:first-child{
+        display: inline-block;
+        width: 29%;
+        text-align: left;
+      }
+      span:last-child{
+        display: inline-block;
+        width: 72%;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,40 @@
+@import url('~@/styles/common');
+.main-body{
+  padding: 30rpx;
+}
+.main-body-details{
+  padding: 0 30rpx 30rpx;
+}
+.safety-list{
+  h2{
+    padding: 30rpx;
+    font-size: 14px;
+  }
+  .desc{
+    margin: 0 30rpx;
+    font-size: 12px;
+    line-height: 48rpx;
+    color: @h2FontColor;
+  }
+  .safety-footer{
+    margin-top: 30rpx;
+    padding: 22rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: @subColor;
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 0.5px;
+      background-color: #dcdcdc;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

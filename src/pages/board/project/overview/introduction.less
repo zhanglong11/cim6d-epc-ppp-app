@@ -1,0 +1,66 @@
+@import '~@/styles/common.less';
+.scroll-roll{
+  position: relative;
+  top: -32rpx;
+  border-radius: 30rpx 30rpx 0  0;
+
+
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  // margin-top: -30px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px 0 rgba(79, 85, 101, 0.06);
+  overflow: visible;
+  z-index: 2;
+  
+  .title{
+    text-align: center;
+    font-size: @h1FontSize;
+    padding:20px 30px;
+    line-height: 48px;
+    width: 100%;
+
+  }
+  .swiper{
+    width: 100%;
+    img{
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+  }
+  }
+
+}
+
+
+
+
+.main-body {
+  font-size: @h2FontSize;
+  padding-bottom: 41px;
+  padding-top: 24px;
+
+}
+
+.uni-card {
+  font-size: 12px;
+  line-height: 48px;
+  width: 700px;
+
+  /deep/ .title {
+    /deep/.name {
+      font-size: @h1FontSize;
+      font-weight: bold;
+      color: #484848;
+      padding-left: 10px;
+
+    }
+
+  }
+}

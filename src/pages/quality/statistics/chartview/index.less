@@ -1,0 +1,87 @@
+@colorGrey: #828282;
+.grey{
+  background-color: #eeeeee;
+}
+.chart-container{
+
+}
+.main{
+  color:@colorGrey;
+  font-size: 14px;
+}
+.list-Container{
+  width: 700rpx;
+  margin: 20rpx auto;
+  border-radius: 20rpx;
+  box-shadow: 0rpx 0rpx 5rpx rgba(0, 0, 0, 0.0980392156862745);
+  background-color: #fff;
+  h4{
+    padding:10rpx 0 10rpx 20rpx;
+  }
+}
+.title-content{
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 2rpx @colorGrey solid;
+  .item{
+    flex: 1;
+    .val,.label{
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    .val{
+      font-size: 16px;
+      height: 40rpx;
+      font-weight: 600;
+    }
+    .label{
+      height: 20rpx;
+      margin: 16rpx 0;
+      color:@colorGrey;
+    }
+    .label.hasBorder{
+      border-right: 1px @colorGrey  solid;
+    }
+  }
+}
+.red{
+  color:#f00;
+}
+.orange{
+  color: #e59641;
+}
+.blue{
+  color:rgba(0, 121, 254, 0.8);;
+}
+.list{
+  position: relative;
+  .list-item{
+    padding: 10rpx 10rpx 10rpx 40rpx;
+    &:not(:last-child){
+      border-bottom: 1rpx @colorGrey solid;
+    }
+    p{
+      line-height: 1.7;
+    }
+    >div{
+      display: flex;
+      margin: 20rpx 0;
+      align-items: flex-start;
+      .level{
+        padding: 6rpx 10rpx;
+        color:#fff;
+        font-size: 12px;
+        border-radius: 10rpx;
+        margin-right: 10rpx;
+        width: 110rpx;
+      }
+      .content{
+        flex:1;
+        color: #f00;
+        font-size: 12px;
+      }
+    }
+
+  }
+}

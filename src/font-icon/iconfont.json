@@ -1,0 +1,142 @@
+{
+  "id": "1782457",
+  "name": "cim6d-app",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4263822",
+      "name": "face",
+      "font_class": "face",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "15321448",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "2902763",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "9977346",
+      "name": "删 除",
+      "font_class": "shanchu",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "10497231",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "13681950",
+      "name": "筛 选 (1)@2x",
+      "font_class": "shaixuanx",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "7923867",
+      "name": "文件格式通用",
+      "font_class": "wenjiangeshitongyong",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "8740863",
+      "name": "箭头",
+      "font_class": "arrow-right",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "9644572",
+      "name": "文件格式ZIP",
+      "font_class": "wenjiangeshiZIP",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "11136007",
+      "name": "文件格式_ppt",
+      "font_class": "wenjiangeshi_ppt",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "11136008",
+      "name": "文件格式_doc",
+      "font_class": "wenjiangeshi_doc",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "11136011",
+      "name": "文件格式_xls",
+      "font_class": "wenjiangeshi_xls",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "11136012",
+      "name": "文件格式_psd",
+      "font_class": "wenjiangeshi_psd",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "12969489",
+      "name": "文件格式",
+      "font_class": "wenjiangeshi",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "13056856",
+      "name": "文件格式_xlsx",
+      "font_class": "wenjiangeshi_xlsx",
+      "unicode": "e708",
+      "unicode_decimal": 59144
+    },
+    {
+      "icon_id": "14461826",
+      "name": "箭头",
+      "font_class": "arrow-left",
+      "unicode": "e709",
+      "unicode_decimal": 59145
+    },
+    {
+      "icon_id": "2949935",
+      "name": "alarm",
+      "font_class": "alarm",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "9059616",
+      "name": "bell",
+      "font_class": "bell",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "2196346",
+      "name": "放大镜",
+      "font_class": "search",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    }
+  ]
+}

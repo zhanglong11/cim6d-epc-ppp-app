@@ -1,0 +1,135 @@
+@import url('../../../styles/common.less');
+
+
+.main-body {
+  font-size: @h2FontSize;
+  padding-bottom: 41px;
+  
+}
+.icon{
+  width: 40rpx;
+  height: 40rpx;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 20rpx;
+  background-size: 40rpx 40rpx;
+}
+.icon-board-info{
+  background-image: url('@/static/images/icon/@2x/board-info.png');
+}
+.icon-board-inspect{
+  background-image: url('@/static/images/icon/@2x/board-inspect.png');
+}
+.icon-board-cost{
+  background-image: url('@/static/images/icon/@2x/board-cost.png');
+}
+.icon-board-safe{
+  background-image: url('@/static/images/icon/@2x/board-safe.png');
+}
+.uni-card {
+  font-size: 12px;
+  line-height: 48px;
+  width: 700px;
+}
+.card-header{
+  .title{
+    display: flex;
+    align-items: center;
+    font-size: @h1FontSize;
+    color: @h1FontColor;
+    padding: 0 31px;
+    line-height: 76px;
+  }
+  .subTitle{
+    display: flex;
+    align-items: center;
+    .subItem{
+      flex: 0 25%;
+      box-sizing: border-box;
+      text-align: center;
+      .subItem-count{
+        color: @mainColor;
+        font-weight: bold;
+        font-size:@h2FontSize ;
+        min-height: 48rpx;
+        &.danger{
+          color: @dangerColor;
+        }
+        &.warn{
+          color: @warningColor;
+        }
+      }
+      .subItem-text{
+        color: @h2FontColor;
+        position: relative;
+        
+        &.border::after{
+          content: '';
+          width: 1px;
+          position: absolute;
+          top: 10rpx;
+          bottom: 10rpx;
+          right: 0;
+          background-color:@h2FontColor;
+          // background: #dcdcdc;
+          transform: scaleX(.5);
+
+        }
+      }
+    }
+  }
+  // .custom-tabs {
+  //   /deep/.s-tab-nav-view {
+  //     display: flex;
+  //     justify-content: center;
+  //     .s-tab-nav {
+  //       &:not(:first-child) {
+  //         margin-left: 40rpx;
+  //       }
+  //     }
+  //   }
+  // }
+}
+.card-footer {
+  display: flex;
+  line-height: 76px;
+  justify-content: space-between;
+  padding: 0 31px;
+  .moreTip{
+    color:@mainColor;
+   
+
+  }
+  
+}
+.card-body{
+  padding: 15px 0;
+}
+.btn-container{
+  display: flex;
+  padding: 0 20rpx;
+  align-items: center;
+  justify-content: flex-end;
+  .taskTotal{
+    margin-left: 160rpx;
+    flex: 1 20rpx;
+    text-align: center;
+    font-size: 14px;
+  }
+  .costType{
+    line-height: 48rpx !important;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100rpx;
+  }
+}
+.empty-wrapper{
+  height: 500rpx;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ uni-image{
+   height: 400px;
+   width: 400px;
+ }
+}

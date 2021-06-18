@@ -1,0 +1,50 @@
+@import url('~@/styles/common.less');
+.guide {
+  padding: 0;
+  position: relative;
+  .swiper {
+    height: auto;
+    flex: 1;
+    .swiper-item {
+      background-size: 100% !important;
+      background-position: center !important;
+    }
+    .swiper-img {
+      width: 100%;
+      height: 100%;
+    }
+    /deep/.uni-swiper-dots {
+      bottom: 70px;
+      .uni-swiper-dot {
+        background: #fff;
+        border: 4px #dcdcdc solid;
+        width: 4px;
+        height: 4px;
+        transition: alls 0.4s;
+        &.uni-swiper-dot-active {
+          border-color: @mainColor;
+        }
+      }
+    }
+  }
+  .skip {
+    color: @mainColor;
+    position: absolute;
+    top: 85px;
+    right: 25px;
+    z-index: 1;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .skip-btn {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    bottom: 140px;
+    left: 50%;
+    width: 340px;
+    margin-left: -170px;
+    border-radius: 100px;
+    transform: scale(0);
+  }
+}

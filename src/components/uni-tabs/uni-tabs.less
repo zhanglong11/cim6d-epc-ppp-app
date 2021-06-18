@@ -1,0 +1,35 @@
+@import '~@/styles/common';
+.tabs {
+  display: flex;
+  align-items: stretch;
+  margin: -15px;
+  flex-wrap: wrap;
+  .item {
+    flex: 1;
+    margin: 15px 0;
+    /deep/ .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin: 0 15px;
+      padding: 12px 0;
+      text-align: center;
+      background-color: #f4f4f4;
+      color: #52596d;
+      line-height: 40px;
+      font-size: 13px;
+      flex: 1;
+      border: 2px solid #0000;
+      border-radius: 10px;
+      &:not(:last-child) {
+        border-right: none;
+      }
+    }
+    &.active /deep/ .wrap {
+      border: 2px solid #496fe5;
+      color: #496fe5;
+      background-color: #fff;
+    }
+  }
+}

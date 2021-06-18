@@ -1,0 +1,52 @@
+ul {
+  width: 100vw;
+  padding: 0 35px;
+  font-size: 14px;
+
+  li {
+    display: block;
+    line-height: 100px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    padding: 0 21px;
+    display: flex;
+    align-items: center;
+    .title {
+      flex: 1;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .time{
+      color: #ccc;
+      font-size: 12px;
+    }
+    .check {
+      margin-left: 10px;
+      font-size: 0;
+      width: 20px;
+      height: 10px;
+      border-left: 4px transparent solid;
+      border-bottom: 4px transparent solid;
+      transform: rotate(-45deg);
+    }
+    &.active {
+      .check {
+        border-left: 4px #0079fe solid;
+        border-bottom: 4px #0079fe solid;
+      }
+    }
+  }
+}
+
+.main {
+  //height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.project-list-wrap {
+  flex: 1;
+  overflow: auto;
+}

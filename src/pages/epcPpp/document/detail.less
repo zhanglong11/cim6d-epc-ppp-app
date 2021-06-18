@@ -1,0 +1,109 @@
+@colorGrey: #828282;
+.header-wrapper {
+  padding: 0 40rpx;
+}
+h3 {
+  padding: 20rpx 0rpx 10rpx 0rpx;
+  color: #666666;
+  font-weight: 700;
+}
+.info {
+  display: flex;
+  height: 60rpx;
+  align-items: center;
+  color: @colorGrey;
+  padding: 10rpx 0;
+  font-size: 14px;
+  > span {
+    &:not(:last-child) {
+      position: relative;
+      margin-right: 20rpx;
+      max-width: 150rpx;
+      &:after {
+        content: '';
+        display: block;
+        width: 8rpx;
+        height: 8rpx;
+        background-color: @colorGrey;
+        position: absolute;
+        top: 50%;
+        right: -20px;
+      }
+    }
+    &:not(:first-child) {
+      margin-left: 10rpx;
+    }
+    &:last-child {
+      max-width: 500rpx;
+    }
+  }
+}
+.baseView {
+  margin: 40rpx 20rpx;
+  text-align: center;
+  .img-wrapper {
+    > div {
+      margin: 0 auto;
+      width: 240rpx;
+      height: 400rpx;
+    }
+  }
+}
+.form-detail {
+  /deep/ .form-label {
+    color: @colorGrey;
+  }
+  /deep/ .form-input {
+    color: @colorGrey;
+  }
+}
+.pop-wrapper {
+  background-color: #fff;
+  color: #999;
+  .pop-header {
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 20rpx 30rpx;
+    border-bottom: 1rpx #999 solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pop-button-list {
+    display: flex;
+    margin: 20rpx 0 0 0;
+    padding: 20rpx 0rpx;
+    justify-content: space-between;
+    background-color: #fff;
+    .item {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      text-align: center;
+      padding: 10rpx;
+      img {
+      }
+      p {
+        font-size: 12px;
+        margin-top: 20rpx;
+      }
+    }
+  }
+}
+.dialog-wrapper {
+  /deep/ .uni-popup-dialog {
+    width: 600rpx;
+    .uni-dialog-title {
+      height: 80rpx;
+      align-items: center;
+      border-bottom: 1px @colorGrey solid;
+    }
+    .uni-dialog-content {
+      padding: 20rpx 30rpx;
+      height: 100rpx;
+    }
+    .uni-dialog-button {
+      height: 70rpx;
+    }
+  }
+}

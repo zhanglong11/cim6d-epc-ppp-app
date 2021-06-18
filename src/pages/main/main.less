@@ -1,0 +1,234 @@
+@import url('~@/styles/common.less');
+.content {
+  width: 100%;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+.main-body {
+  padding: 0 25px;
+&.empty-wrapper{
+    display: flex;
+    flex-direction: column;
+    .empty {
+      position: static;
+    }}
+}
+.bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  .blue {
+    padding: 0 30px;
+    background: url('/static/images/background-buildings.png') #496fe5 center 90%;
+    background-size: cover;
+    height: 250px;
+    width: 100vw;
+    .select-project {
+      color: #fff;
+      font-size: 14px;
+      flex: 1;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      b {
+        flex: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      i {
+        margin-left: 15px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:before {
+          content: '';
+          width: 12px;
+          height: 12px;
+          border-top: 2px #fff solid;
+          border-right: 2px #fff solid;
+          transform: rotate(45deg);
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .gray {
+    height: 100px;
+    width: 100vw;
+    margin-top: -90px;
+    background-color: #f9f9f9;
+    border-radius: 30px 30px 0px 0px;
+  }
+}
+.weather-con {
+  margin: 40px 30px 0;
+}
+.weather {
+  position: relative;
+  z-index: 2;
+  height: 173px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 10px 0px rgba(11, 75, 159, 0.13);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  image {
+    width: 80px;
+    height: 80px;
+    margin-right: 43px;
+  }
+  > div {
+    flex: 1;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    .value {
+      font-size: 14px;
+      color: #2b2b2b;
+    }
+  }
+  .date {
+    color: #aaa9a9;
+    font-size: 13px;
+  }
+  footer {
+    margin-top: 33px;
+    font-size: 13px;
+    color: #797979;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.module-list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 10px 0px rgba(11, 75, 159, 0.13);
+  border-radius: 20px;
+  padding: 24px 0;
+  box-sizing: border-box;
+  > li {
+    padding: 20px 0;
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    image {
+      width: 70px;
+      height: 70px;
+    }
+    p {
+      margin-top: 25px;
+    }
+  }
+}
+
+.log-list {
+  margin-bottom: 40px;
+  li {
+    min-height: 157px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px 0px rgba(11, 75, 159, 0.13);
+    border-radius: 20px;
+    padding: 20px 40px;
+    font-size: 13px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    &.unread {
+      &::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 35px;
+        display: block;
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-color: #fc5556;
+        border-radius: 50%;
+      }
+    }
+
+    p {
+      display: flex;
+      align-items: flex-start;
+      span{
+        flex: 1;
+      }
+    }
+
+    p::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      margin-right: 17px;
+      margin-top: 8rpx;
+    }
+
+    p:first-child {
+      &:before {
+        background: url(~@/static/images/main/bell.png);
+        background-size: 100% 100%;
+        color: #496fe5;
+      }
+
+      font-weight: bold;
+    }
+
+    p:last-child {
+      &:before {
+        background: url(~@/static/images/main/alarm.png);
+        background-size: 100% 100%;
+      }
+
+      font-size: 12px;
+    }
+
+    .time {
+      font-size: 12px;
+      color: rgba(91, 91, 91, 1);
+    }
+  }
+}
+.projectWrap {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  .location {
+    flex: 0 0 20vw;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
+
+/deep/.custom-title{
+  .extra{
+    color: #999;
+    display: flex;
+    align-items: center;
+  }
+}
+.read{
+  margin-left: 8rpx;
+  width: 26rpx;
+  height: 26rpx;
+}

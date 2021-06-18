@@ -1,0 +1,76 @@
+@import '~@/styles/common.less';
+
+.uni-searchbar {
+  margin: 28rpx 0 25px;
+}
+.tabs-wrap{
+  /deep/ .tabs{
+    justify-content: center;
+  }
+  /deep/ .item{
+    flex: 1;
+  }
+}
+.main-body {
+  font-size: @h2FontSize;
+
+  .uni-card {
+    font-size: 12px;
+    color: #4f6481;
+    line-height: 48px;
+    width: 700px;
+  }
+  .card-body {
+    padding: 31px;
+    color: @h2FontColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card-info {
+      flex: 1;
+      width: 50%;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      
+      
+      .flex-item{
+        flex-basis: 50%;
+        padding: 0 10rpx;
+        display: flex;
+        align-items: flex-start;
+        .flex-item-label{
+          flex-basis: auto;
+          white-space: nowrap;
+         
+        }
+       
+        &.title{
+          flex-basis: 100%;
+          .ellipsis
+        }
+      }
+     
+    }
+
+    .title {
+      padding-left: 16rpx;
+      font-size: @h2FontSize;
+      font-weight: bold;
+      position: relative;
+      margin-bottom: 15px;
+      color:#020202;
+      .ellipsis;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    line-height: 76px;
+    justify-content: space-between;
+    padding: 0 31px;
+    color: #4f6481;
+  }
+}

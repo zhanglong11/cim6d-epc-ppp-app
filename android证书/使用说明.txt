@@ -1,0 +1,13 @@
+安卓秘钥
+cim6dApp
+
+精装修
+包名：uni.cim6dapp
+appid：__UNI__460B733
+证书文件：bimfishApp-jingzhuangxiu.keystore
+
+施工
+包名：uni.cim6dapp_shigong
+appid：__UNI__E010B9A
+生成证书命令：keytool -genkey -v -keystore bimfishApp-shigong.keystore -alias bimfishApp-shigong.keystore -keyalg RSA -keysize 2048 -validity 10000
+证书文件：bimfishApp-shigong.keystore

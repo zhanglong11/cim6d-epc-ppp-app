@@ -1,0 +1,199 @@
+@import url("common.less");
+/* 头条小程序需要把 iconfont 样式放到组件外 */
+@import "../components/m-icon/m-icon.css";
+
+/*每个页面公共css */
+page {
+  min-height: 100%;
+  display: flex;
+  font-size: 16px;  
+}
+page,body{
+  background: @backGroundColor;
+}
+
+/* #ifdef MP-WEIXIN */
+view{
+	box-sizing: border-box;
+}
+.footer-btn{
+	padding: 30px;
+	width: 100%;
+}
+/* #endif */
+/* #ifdef MP-BAIDU */
+page {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+swan-template {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+}
+
+/* 原生组件模式下需要注意组件外部样式 */
+custom-component {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+}
+
+/* #endif */
+
+/* #ifdef MP-ALIPAY */
+page {
+  min-height: 100vh;
+}
+
+/* #endif */
+
+/* 原生组件模式下需要注意组件外部样式 */
+m-input {
+  width: 100%;
+  /* min-height: 100%; */
+  display: flex;
+  flex: 1;
+}
+
+.input-group {
+  background-color: #ffffff;
+  margin-top: 20px;
+  position: relative;
+}
+
+.input-group::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 1px;
+  content: "";
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #c8c7cc;
+}
+
+.input-group::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  content: "";
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #c8c7cc;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  font-size: 18px;
+  line-height: 80px;
+}
+
+.input-row .title {
+  width: 144px;
+  padding-left: 30px;
+
+
+
+}
+
+.input-row.border::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 16px;
+  height: 1px;
+  content: "";
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  background-color: #c8c7cc;
+}
+
+uni-button{
+  font-size: 17px;
+  font-weight: normal;
+  border-radius: 90px;
+  line-height: 2.55555556 !important;
+  &:after{
+    display: none !important;
+  }
+  &.primary {
+    background-color: @btnColor;
+  }
+}
+// 平滑滚动
+.scroll-roll{
+  -webkit-overflow-scrolling: touch;
+  flex: 1;
+  overflow: hidden;
+  height: 50vh;
+}
+div.scroll-roll{
+  overflow-y: auto;
+}
+.main{
+  padding-top: 30px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: @backGroundColor;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 30px 30px 0 0;
+  overflow-y: hidden;
+  &:before{
+    content: '';
+    background: @headerColor;
+    flex: 1;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &.is-white{
+    padding-top: 0;
+    border-radius: 0;
+    &:before{
+      display: none;
+    }
+  }
+}
+
+.header-line{
+  background: @headerColor;
+  height: 30px;
+  display: flex;
+  &:before{
+    content: '';
+    border-radius: 30px 30px 0 0;
+    background: @backGroundColor;
+    height: 100%;
+    flex: 1;
+  }
+  &.bg-white::before{
+    background: #fff;
+  }
+}
+.main-body{
+  .card-warp:first-child{
+    margin-top: 0;
+  }
+}
+.save-time{
+  padding-right: 30rpx;
+  font-size: 12px;
+  text-align: right;
+  color: @h2FontColor;
+  line-height: 1;
+  &.no-padding{
+    padding: 0;
+  }
+}

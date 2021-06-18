@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<title class="title">[文件管理器]</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			.content {background: transparent;}
+			.fixed {position: fixed;bottom: 0;left: 0;right: 0;width: 100%;}
+			.content .mask {top: 0;background: rgba(0,0,0,.4);z-index: 90;}
+			.content .file-content {z-index: 91;height: 60px;background: #fff;text-align: center;}
+			.btn {position: relative;}
+			.btn .file {position: absolute;z-index: 93;left: 0;right: 0;top: 0;bottom: 0;height: 60px;width: 100%;opacity: 0;}
+			.btn-bg {margin-top: 10px;background: #0066CC;color: #fff;width: 80%;height: 40px;border: 0;border-radius: 5px;}
+			.tis {top: 0;z-index: 95;display: none;justify-content: center;align-items: center;}
+			.tis .tis-content {background: #fff;width: 60%;border-radius: 10px;padding: 20px 0;}
+			.tis .tis-content img {width: 50px;height: 50px;}
+			.tis-progress {margin: 10px 0;color: #999;}
+			.cancel-btn {margin-top: 30px;height: 30px;line-height: 1;padding: 0 2em;background: #e3e3e3;color: #898989;border: 0;border-radius: 5px;}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="content">
+
+			<div class="fixed mask"></div>
+
+			<div align="center" class="fixed tis">
+				<div class="tis-content">
+					<div>
+<!--						logo-->
+						<img src='data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAnFBMVEUAAABHcOZHcOZHcOZHcOZH
+cOZHcOZHcOZHcOZHcOdHcOZHcOZHb+ZHcOZHcObl5uzi5Ozk5eyBm+h6luhdgeff4ezZ3ezb3uzP
+1uxMdOZYfedQd+fW2+xVeufd4OzH0Ot5lehsi+jM1Ou8x+vT2eyywOqtvOpoiOdhhOfL0uu3xOqO
+penDzeuouOqhs+qJoemTqOl0kuiZremDnehrRn4LAAAADnRSTlMA0L2Ubhfo5zgL69g3CwvydAcA
+AANSSURBVGje7drZbuIwFIBhdko7PccGsm+EJCxha+n7v9sADnWSMRhKzGhG+S8quVL7kQXHIDdY
+3U6rBxXXb3W6Dd6g/QpK6rcHZ+OlCcpq/sqMN1DY28vReG+C0prvB6QNimsf7qtXUNxrt9EB5XUa
+LVBeq9ED5fUa8IRqpEa+q5Ea+W+Rr0lxrABxNnSYH6tAFibiEfGApQIZ6siQ5SewKkecLWKGGHTv
+gApkEVGOIEnGCpBPEzGHIE7DqhFrT7CEoLazKkWcFDGP6HgqcSpEFiYKEVwuKkOGBl5A0JhUgzgz
+RCHC2jsVIIsAryI0sh9GvlwUI1wZPYg4Wx9VI3aKeBPieD9GQgNvRMZxKLqcjhxZEbyEuGWE+Cso
+N9JtGWIniHcgiEnxlFlbgjIkXOKdCAZz4NkRogSxdj5eQ2IRgsaQz9kuSpENwesIESGo7c+X00cZ
+sljj5eI5AJhiBDGxs8spQ0Yx5vPTTarxSWQBh6YaFSMYhBAGKEH44yk/z050NqBbBxhCLiDobnWU
+IePym/yDnWT2D0bACgxCywhPhoQmFjPYfemdjDGcEV0jP0eGuhhx3Ok6Xa8sYEVm7OqGr2mEUpJD
+ouDEpvT4kxBPjMA8EJ6unTsN1oGZeBkS67pxIAgtHsns+ITTvqzTUITw1W7xUEbHCx/rsTk1XSNg
+S8d1dhSIJQRglc4BTkN6GQFr5RcULdpEPvEN13UNjRindVDADgIFCFiQIUiFCF/HlaNE808vHukE
+AJaMECCsbHgNASeiAoYQep5WTIpCZAss7QYErA+C4jIkr0++kY0FrB2RImxuuRvRd7k/9yWIYJaU
+I+UFeKgjEvkz3trSOxAyc6DQeCpDmDIiNyPa0IJSdkQsKcLf/nLEES28vY1zCwLejNyEiLNAjrB7
+2Zcjjy+4Q1OCuOEDCL+AfyJTPlzOq/kQtNIuInRmQTUIhPoFhAwtqAoBOxUgbM1YDcIfZRxZ8kVW
+BQhv6JYQYwdQNQLzdQEJPkEBAt4shyRjAAUIW0czZP0BLAUIhC5D+GEoQMBLVH49yGfMERT6d7+y
+rRHB72qkRmrkbyA9UF7/KdsXnrMRo9sHxfW7z9kc0xio3uYzeM6GJfVbr561iUzhdrje93a430x5
+QKGHWtACAAAAAElFTkSuQmCC'/>
+					</div>
+					<div class="tis-progress">
+						努力上传中..
+					</div>
+					<div class="cancel">
+						<button type="button" class="cancel-btn">取消上传</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="fixed file-content">
+				<div class="btn">
+					<button type="button" class="btn-bg">打开文件管理器</button>
+					<input class="file" type="file" />
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js"></script>
+		<script src="js/h5-uploader.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,71 @@
+@import '~@/styles/common.less';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F9F9;
+}
+.uni-searchbar{
+  margin: 30px 0;
+}
+
+
+.project-list-wrap {
+  flex: 1;
+  overflow: auto;
+}
+
+.main-header {
+  font-size: 13px;
+  display: block;
+  padding: 0;
+}
+
+.main-body {
+  .project-list {
+    font-size: 13px;
+    background-color: #fff;
+    width: 700px;
+  }
+
+  .list-item {
+    line-height: 100px;
+    cursor: pointer;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+
+    .checked {
+      margin-right: 40rpx;
+      width: 30rpx;
+      height: 30rpx;
+      border-radius: 50%;
+      border: 4rpx #ccc solid;
+      translate: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:before{
+        content: '';
+        margin-top: -4rpx;
+        width: 15rpx;
+        height: 10rpx;
+        border-left: 2px #fff solid;
+        border-bottom: 2px #fff solid;
+        transform: rotate(-45deg);
+      }
+
+      &.active{
+        background: @headerColor;
+        border-color: @headerColor;      }
+    }
+
+    .title {
+      flex: 1;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-right: 20px;
+    }
+  }
+}

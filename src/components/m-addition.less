@@ -1,0 +1,46 @@
+
+.log-add {
+  position: fixed;
+  // bottom: 120px;
+  bottom: 150px;
+  right: 50px;
+  z-index: 100;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 24px 0 rgba(79, 85, 101, 0.27);
+  border-radius: 50%;
+
+  .inner {
+    width: 41px;
+    height: 41px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      background: rgba(71, 120, 243, 1);
+      box-shadow: 0 4px 21px 0 rgba(39, 85, 201, 0.45);
+      border-radius: 3px;
+      position: absolute;
+    }
+
+    &::before {
+      height: 100%;
+      width: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      height: 4px;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

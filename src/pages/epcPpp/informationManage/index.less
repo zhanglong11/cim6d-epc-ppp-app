@@ -1,0 +1,136 @@
+@import '~@/styles/common.less';
+
+.main {
+  padding-top: 15px;
+}
+.uni-searchbar {
+  margin: 25px 0;
+}
+
+.main-body {
+  font-size: @h2FontSize;
+
+  .uni-card {
+    font-size: 12px;
+    color: #4f6481;
+    line-height: 48px;
+    width: 700px;
+  }
+  .card-body {
+    padding: 31px;
+    color: @h2FontColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .card-info {
+      flex: 1;
+      width: 50%;
+      position: relative;
+      padding-right: 30px;
+      .info-item {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &:before {
+        content: '';
+        width: 5px;
+        height: 24rpx;
+        position: absolute;
+        top: 14rpx;
+        border-radius: 3rpx;
+      }
+      &.grey::before {
+        background-color: @h2FontColor;
+      }
+      &.green::before {
+        background-color: @successColor;
+      }
+      &.blue::before {
+        background-color: @mainColor;
+      }
+      &.lightBlue::before {
+        background-color: @activeColor;
+      }
+      &.red::before {
+        background-color: @dangerColor;
+      }
+      &.orange::before {
+        background-color: @warningColor;
+      }
+    }
+
+    .title {
+      padding-left: 16rpx;
+      font-size: @h2FontSize;
+      font-weight: bold;
+      position: relative;
+      margin-bottom: 15px;
+      color:#020202;
+      .ellipsis;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    line-height: 76px;
+    justify-content: space-between;
+    padding: 0 31px;
+    color: #4f6481;
+  }
+}
+
+.calendar-wrap {
+  position: relative;
+
+  .calendar-view-mode-control {
+    image {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+    }
+
+    position: absolute;
+    z-index: 2;
+    top: 24px;
+    right: 20px;
+    color: #4778f3;
+    font-size: 12px;
+  }
+}
+
+.mpvue-calendar {
+  border-radius: 40px;
+
+  /deep/ .mc-day.pin {
+    font-size: 10px !important;
+  }
+
+  /deep/ .selected.mc-today-element {
+    /deep/span {
+      background-color: #3b75fb;
+      border-radius: 50%;
+    }
+
+
+  }
+
+}
+
+/deep/ .calendar-info>div.mc-month .mc-month-inner>span {
+  height: 48px;
+}
+/deep/ .pin {
+  .slot-element {
+    width: 100%;
+    text-align: center;
+    color: #4778f3;
+    position: relative;
+    top: -10px;
+    height: 10px;
+    line-height: 10px;
+  }
+}
+.scroll-roll{
+  height: auto!important;
+}

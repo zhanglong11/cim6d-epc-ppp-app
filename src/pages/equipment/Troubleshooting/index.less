@@ -1,0 +1,50 @@
+@import '~@/styles/common.less';
+@import '~@/styles/list.less';
+
+.uni-searchbar {
+  margin: 28px 0 25px;
+}
+
+.card-info {
+  flex: 1;
+  width: 50%;
+  position: relative;
+
+  .flex-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .flex-left {
+      flex: 1 20%;
+      display: flex;
+      flex-wrap: wrap;
+
+      .flex-item {
+        padding: 0 10rpx;
+        flex-basis: 50%;
+        display: flex;
+        align-items: flex-start;
+
+        &.flex-100 {
+          flex-basis: 100%;
+        }
+
+        .flex-item-label {
+          flex-basis: auto;
+          white-space: nowrap;
+        }
+
+        .flex-item-content {
+          .ellipsis;
+        }
+      }
+    }
+
+    .uni-status {
+      flex-grow: 0;
+      margin-left: 20rpx;
+    }
+  }
+}

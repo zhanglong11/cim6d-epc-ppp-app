@@ -1,0 +1,101 @@
+@import '~@/styles/common.less';
+
+.main-body {
+  padding: 33px 25px 0;
+  padding-top: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+}
+
+.card {
+  padding-top: 0;
+  border-radius: 20px;
+
+  .card-body {
+    padding: 30px;
+    font-size: 13px;
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      & > * {
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+
+      .message-type {
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        line-height: 76px;
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .messsage-info {
+        padding: 0 20px;
+        flex-shrink: 1;
+        flex-grow: 1;
+        line-height: 36px;
+
+        & > * {
+          padding: 6px 0;
+          // 为了避免多行文本时行间距过大
+        }
+
+        .title {
+          color: #2e2e2e;
+          font-size: 13px;
+          font-weight: bold;
+          display: flex;
+          align-items: flex-start;
+          span{
+            flex: 1;
+          }
+        }
+
+        .time {
+          font-size: 12px;
+          color: #5b5b5b;
+        }
+
+        .icon {
+          width: 30px;
+          height: 30px;
+          margin-top: 4rpx;
+          margin-right: 17px;
+          display: inline-block;
+          margin-right: 20px;
+          vertical-align: middle;
+          &.icon-clock {
+            background: url(~@/static/images/main/bell.png);
+            background-size: 100% 100%;
+            color: #496fe5;
+          }
+          &.icon-msg {
+            background: url(~@/static/images/main/alarm.png);
+            background-size: 100% 100%;
+          }
+        }
+      }
+
+      .icon-mark {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        vertical-align: middle;
+
+        &.unread-icon {
+          background: rgba(252, 85, 86, 1);
+        }
+      }
+    }
+  }
+}

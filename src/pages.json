@@ -1,0 +1,2503 @@
+{
+  "pages": [
+    {
+      "path": "pages/main/main",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/contract/index",
+      "style": {
+        "navigationBarTitleText": "合同管理",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/contract/detail",
+      "style": {
+        "navigationBarTitleText": "合同详情"
+      }
+    },
+    {
+      "path": "pages/contact/contact",
+      "style": {
+        "navigationBarTitleText": "通讯录"
+      }
+    },
+    {
+      "path": "pages/contact/user/detail",
+      "style": {
+        "navigationBarTitleText": "人员详情"
+      }
+    },
+    {
+      "path": "pages/contact/department/department",
+      "style": {
+        "navigationBarTitleText": "部门"
+      }
+    },
+    {
+      "path": "pages/contact/department/user-list",
+      "style": {
+        "navigationBarTitleText": "部门人员列表" // 部门人员列表
+      }
+    },
+    {
+      "path": "pages/contact/collection/collection",
+      "style": {
+        "navigationBarTitleText": "同事收藏夹",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\uE613",
+                "fontSize": 24,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "add",
+                "width": "40px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/contact/collection/detail",
+      "style": {
+        "navigationBarTitleText": "", //收藏夹详情
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\uE60A",
+                "fontSize": 24,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "more",
+                "width": "40px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/contact/collection/add",
+      "style": {
+        "navigationBarTitleText": "添加收藏夹",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "保存",
+                "fontSize": 14,
+                "color": "white",
+                "key": "save",
+                "width": "35px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/contact/collection/edit",
+      "style": {
+        "navigationBarTitleText": "编辑收藏夹",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "保存",
+                "fontSize": 14,
+                "color": "white",
+                "key": "save",
+                "width": "35px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/application/application",
+      "style": {
+        "navigationBarTitleText": "应用"
+      }
+    },
+    {
+      "path": "pages/application/application-material",
+      "style": {
+        "navigationBarTitleText": "材料管理"
+      }
+    },
+    {
+      "path": "pages/application/application-quality",
+      "style": {
+        "navigationBarTitleText": "质量管理"
+      }
+    },
+    {
+      "path": "pages/application/application-safe",
+      "style": {
+        "navigationBarTitleText": "安全管理"
+      }
+    },
+    {
+      "path": "pages/application/application-schedule",
+      "style": {
+        "navigationBarTitleText": "进度管理"
+      }
+    },
+
+    {
+      "path": "pages/guide/index",
+      "style": {
+        "navigationBarTitleText": "引导页",
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/user/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue60a",
+                "fontSize": 24,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "setting",
+                "width": "30px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/user/setting",
+      "style": {
+        "navigationBarTitleText": "我的设置"
+      }
+    },
+    {
+      "path": "pages/user/setting-items/information-setting",
+      "style": {
+        "navigationBarTitleText": "编辑个人资料",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "保存",
+                "fontSize": 14,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "save",
+                "width": "35px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/user/setting-items/change-password",
+      "style": {
+        "navigationBarTitleText": "修改密码"
+      }
+    },
+    {
+      "path": "pages/user/setting-items/reset-password",
+      "style": {
+        "navigationBarTitleText": "重置密码"
+      }
+    },
+    {
+      "path": "pages/user/setting-items/home-setting",
+      "style": {
+        "navigationBarTitleText": "首页设置"
+      }
+    },
+    {
+      "path": "pages/user/setting-items/remind-setting",
+      "style": {
+        "navigationBarTitleText": "提醒设置"
+      }
+    },
+    {
+      "path": "pages/user/setting-items/attendance-setting",
+      "style": {
+        "navigationBarTitleText": "考勤设置"
+      }
+    },
+    {
+      "path": "pages/log/log",
+      "style": {
+        "navigationBarTitleText": "施工日志",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/log/detail",
+      "style": {
+        "navigationBarTitleText": "施工日志"
+      }
+    },
+    {
+      "path": "pages/log/log-add",
+      "style": {
+        "navigationBarTitleText": "新建施工日志"
+      }
+    },
+
+    {
+      "path": "pages/user/message",
+      "style": {
+        "navigationBarTitleText": "我的消息",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/user/message-list",
+      "style": {
+        "navigationBarTitleText": "施工日志消息",
+        "enablePullDownRefresh": true
+      }
+    },
+
+    {
+      "path": "pages/bim-model/select-monomer",
+      "style": {
+        "navigationBarTitleText": "选择版本",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "确定",
+                "fontSize": 14,
+                "color": "#007AFF"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/bim-model/index",
+      "style": {
+        "navigationBarTitleText": "模型展示",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/bim-model/select-model-room",
+      "style": {
+        "navigationBarTitleText": "选择样板间",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "确定",
+                "fontSize": 14,
+                "color": "#007AFF"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/bim-model/model-room-details",
+      "style": {
+        "navigationBarTitleText": "样板间展示",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/select-project/select-project",
+      "style": {
+        "navigationBarTitleText": "选择项目",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "确定",
+                "fontSize": 14,
+                "color": "#007AFF"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/select-user/select-user",
+      "style": {
+        "navigationBarTitleText": "选择成员",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "完成",
+                "fontSize": 14,
+                "color": "#ffffff",
+                "key": "save"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/select-contract/select-contract",
+      "style": {
+        "navigationBarTitleText": "选择合同"
+      }
+    },
+    {
+      "path": "pages/message/construction-log",
+      "style": {
+        "navigationBarTitleText": "施工日志消息"
+      }
+    },
+    {
+      "path": "pages/select-area/select-province",
+      "style": {
+        "navigationBarTitleText": "选择省份"
+      }
+    },
+    {
+      "path": "pages/select-area/select-city",
+      "style": {
+        "navigationBarTitleText": "选择城市"
+      }
+    },
+    {
+      "path": "pages/select-area/select-area",
+      "style": {
+        "navigationBarTitleText": "选择市区"
+      }
+    },
+    {
+      "path": "pages/select-bim-component/select-bim-component",
+      "style": {
+        "navigationBarTitleText": "选择构件"
+      }
+    },
+    {
+      "path": "pages/inspect/plan",
+      "style": {
+        "navigationBarTitleText": "新建检查"
+      }
+    },
+    {
+      "path": "pages/inspect/detail",
+      "style": {
+        "navigationBarTitleText": "检查详情"
+      }
+    },
+    {
+      "path": "pages/inspect/plan-list",
+      "style": {
+        "navigationBarTitleText": "选择计划",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "确定",
+                "fontSize": 15,
+                "color": "#007AFF"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/inspect/index",
+      "style": {
+        "navigationBarTitleText": "质量检查",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/inspect/add",
+      "style": {
+        "navigationBarTitleText": "新建检查"
+      }
+    },
+    {
+      "path": "pages/search/index",
+      "style": {
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/select-department/select-department",
+      "style": {
+        "navigationBarTitleText": "选择部门"
+      }
+    },
+    {
+      "path": "pages/quality/statistics/chartview/index",
+      "style": {
+        "navigationBarTitleText": "质量统计",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "模型",
+                "fontSize": 14,
+                "color": "white",
+                "key": "bim"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/measure/list",
+      "style": {
+        "navigationBarTitleText": "实测实量",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/measure/add",
+      "style": {
+        "navigationBarTitleText": "实测实量",
+        "app-plus": {
+          "titleNView": {
+            "backButton": {
+              "title": "取消"
+            },
+            "buttons": [
+              {
+                "text": "下一步",
+                "fontSize": 14,
+                "color": "white",
+                "key": "next",
+                "width": "60px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/measure/step-2",
+      "style": {
+        "navigationBarTitleText": "实测实量",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "下一步",
+                "fontSize": 14,
+                "color": "white",
+                "key": "next",
+                "width": "60px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/measure/step-3",
+      "style": {
+        "navigationBarTitleText": "实测实量",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "完成",
+                "fontSize": 14,
+                "color": "white",
+                "key": "next"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/measure/step-4",
+      "style": {
+        "navigationBarTitleText": "实测实量"
+      }
+    },
+    {
+      "path": "pages/quality/measure/detail",
+      "style": {
+        "navigationBarTitleText": "实测实量详情",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue608",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "delete"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/measure/reMeasure",
+      "style": {
+        "navigationBarTitleText": "实测实量复测"
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/list",
+      "style": {
+        "navigationBarTitleText": "质量验收列表",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/jianyanpi/edit",
+      "style": {
+        "navigationBarTitleText": "新建验收",
+        "app-plus": {
+          "titleNView": {
+            "backButton": {
+              "title": "取消"
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/jianyanpi/detail",
+      "style": {
+        "navigationBarTitleText": "验收详情"
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/fenxiang/edit",
+      "style": {
+        "navigationBarTitleText": "新建验收",
+        "app-plus": {
+          "titleNView": {
+            "backButton": {
+              "title": "取消"
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/fenxiang/detail",
+      "style": {
+        "navigationBarTitleText": "验收详情"
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/fenbu/edit",
+      "style": {
+        "navigationBarTitleText": "新建验收",
+        "app-plus": {
+          "titleNView": {
+            "backButton": {
+              "title": "取消"
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/fenbu/detail",
+      "style": {
+        "navigationBarTitleText": "验收详情"
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/yinbi/edit",
+      "style": {
+        "navigationBarTitleText": "新建验收",
+        "app-plus": {
+          "titleNView": {
+            "backButton": {
+              "title": "取消"
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/yinbi/detail",
+      "style": {
+        "navigationBarTitleText": "验收详情"
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/danwei/edit",
+      "style": {
+        "navigationBarTitleText": "新建验收",
+        "app-plus": {
+          "titleNView": {
+            "backButton": {
+              "title": "取消"
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/danwei/detail",
+      "style": {
+        "navigationBarTitleText": "验收详情"
+      }
+    },
+    {
+      "path": "pages/safe/index",
+      "style": {
+        "navigationBarTitleText": "安全检查",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/safe/statistics/chartview/index",
+      "style": {
+        "navigationBarTitleText": "安全统计",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "模型",
+                "fontSize": 14,
+                "color": "white",
+                "key": "bim"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/about/index",
+      "style": {
+        "navigationBarTitleText": "关于应用",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/about/update-records",
+      "style": {
+        "navigationBarTitleText": "更新记录"
+      }
+    },
+    {
+      "path": "pages/about/agreement",
+      "style": {
+        "navigationBarTitleText": "服务协议"
+      }
+    },
+    {
+      "path": "pages/safe/add",
+      "style": {
+        "navigationBarTitleText": "新建检查"
+      }
+    },
+    {
+      "path": "pages/safe/detail",
+      "style": {
+        "navigationBarTitleText": "检查详情"
+      }
+    },
+    {
+      "path": "pages/safe/selectDangerSource",
+      "style": {
+        "navigationBarTitleText": "选择危险源"
+      }
+    },
+    {
+      "path": "pages/board/project/project",
+      "style": {
+        "navigationBarTitleText": "项目看板"
+      }
+    },
+    {
+      "path": "pages/board/project/overview/introduction",
+      "style": {
+        "navigationBarTitleText": "项目介绍"
+      }
+    },
+
+    {
+      "path": "pages/board/progress/progress",
+      "style": {
+        "navigationBarTitleText": "进度看板",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/board/video/video",
+      "style": {
+        "navigationBarTitleText": "视频监控",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/board/milestone/milestone",
+      "style": {
+        "navigationBarTitleText": "里程碑",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/progress/progress",
+      "style": {
+        "navigationBarTitleText": "进度管理"
+      }
+    },
+    {
+      "path": "pages/progress/write",
+      "style": {
+        "navigationBarTitleText": "进度填报"
+      }
+    },
+    {
+      "path": "pages/quality/statistics/acceptance/select-accept/select-accept",
+      "style": {
+        "navigationBarTitleText": "选择验收",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "确定",
+                "fontSize": 14,
+                "color": "#0079FE"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/safeCivilizationCheck/index",
+      "style": {
+        "navigationBarTitleText": "安全文明检查",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/safeCivilizationCheck/add",
+      "style": {
+        "navigationBarTitleText": "新建检查"
+      }
+    },
+    {
+      "path": "pages/safeCivilizationCheck/plan-list",
+      "style": {
+        "navigationBarTitleText": "选择计划"
+      }
+    },
+    {
+      "path": "pages/safeCivilizationCheck/plan-add",
+      "style": {
+        "navigationBarTitleText": "新建检查"
+      }
+    },
+    {
+      "path": "pages/safeCivilizationCheck/check/detail",
+      "style": {
+        "navigationBarTitleText": "检查详情"
+      }
+    },
+    {
+      "path": "pages/safeCivilizationCheck/recheck/detail",
+      "style": {
+        "navigationBarTitleText": "安全文明复检"
+      }
+    },
+    {
+      "path": "pages/safeCivilizationCheck/rectification/detail",
+      "style": {
+        "navigationBarTitleText": "安全文明复检"
+      }
+    },
+
+    {
+      "path": "pages/material/inventory/index",
+      "style": {
+        "navigationBarTitleText": "材料库存"
+      }
+    },
+    {
+      "path": "pages/material/inventory/detail",
+      "style": {
+        "navigationBarTitleText": "材料详情",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "type": "menu"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/material/inventory/record",
+      "style": {
+        "navigationBarTitleText": "出入库记录"
+      }
+    },
+    {
+      "path": "pages/material/inventory/add",
+      "style": {
+        "navigationBarTitleText": "新建材料",
+        "app-plus": {
+          "titleNView": {
+            "backButton": {
+              "title": "取消"
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/enterAndExit/index",
+      "style": {
+        "navigationBarTitleText": "设备进退场",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/enterAndExit/enter",
+      "style": {
+        "navigationBarTitleText": "新建设备进场"
+      }
+    },
+    {
+      "path": "pages/equipment/enterAndExit/enterDetail",
+      "style": {
+        "navigationBarTitleText": "设备详情",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "设备退场",
+                "fontSize": 14,
+                "color": "white",
+                "key": "exit",
+                "width": "70px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/enterAndExit/exit",
+      "style": {
+        "navigationBarTitleText": "设备退场"
+      }
+    },
+    {
+      "path": "pages/equipment/enterAndExit/exitDetail",
+      "style": {
+        "navigationBarTitleText": "设备详情"
+      }
+    },
+    {
+      "path": "pages/equipment/Troubleshooting/index",
+      "style": {
+        "navigationBarTitleText": "设备故障及维修",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/Troubleshooting/add",
+      "style": {
+        "navigationBarTitleText": "新建设备故障",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "存为草稿",
+                "fontSize": 14,
+                "color": "white",
+                "key": "draft",
+                "width": "70px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/Troubleshooting/detail",
+      "style": {
+        "navigationBarTitleText": "设备故障详情",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "type": "menu"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/Troubleshooting/addShooting",
+      "style": {
+        "navigationBarTitleText": "设备故障维修"
+      }
+    },
+    {
+      "path": "pages/equipment/Troubleshooting/shootingDetail",
+      "style": {
+        "navigationBarTitleText": "设备故障维修验收"
+      }
+    },
+    {
+      "path": "pages/material/receipt/list",
+      "style": {
+        "navigationBarTitleText": "入库单",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/material/receipt/detail",
+      "style": {
+        "navigationBarTitleText": "入库单详情"
+      }
+    },
+    {
+      "path": "pages/material/receipt/add",
+      "style": {
+        "navigationBarTitleText": "新建入库单"
+      }
+    },
+    {
+      "path": "pages/material/purchaseOrder/list",
+      "style": {
+        "navigationBarTitleText": "采购单",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/material/purchaseOrder/detail",
+      "style": {
+        "navigationBarTitleText": "采购单详情",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "type": "menu"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/material/purchaseOrder/add",
+      "style": {
+        "navigationBarTitleText": "新建采购单",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "存为草稿",
+                "fontSize": 14,
+                "color": "white",
+                "key": "draft",
+                "width": "70px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/material/materialUse/list",
+      "style": {
+        "navigationBarTitleText": "材料使用申请",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/material/materialUse/detail",
+      "style": {
+        "navigationBarTitleText": "材料使用申请详情",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "type": "menu"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/material/materialUse/add",
+      "style": {
+        "navigationBarTitleText": "新建材料使用申请",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "存为草稿",
+                "fontSize": 14,
+                "color": "white",
+                "key": "draft",
+                "width": "70px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/material/stockOut/list",
+      "style": {
+        "navigationBarTitleText": "出库单"
+      }
+    },
+    {
+      "path": "pages/material/stockOut/detail",
+      "style": {
+        "navigationBarTitleText": "出库单详情"
+      }
+    },
+    {
+      "path": "pages/material/stockOut/add",
+      "style": {
+        "navigationBarTitleText": "新建出库单"
+      }
+    },
+    {
+      "path": "pages/user/approval-todo-type-list",
+      "style": {
+        "navigationBarTitleText": "我的待审核",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/user/approval-todo",
+      "style": {
+        "navigationBarTitleText": "待审核",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/user/my-task-type-list",
+      "style": {
+        "navigationBarTitleText": "我的申请",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/user/my-task",
+      "style": {
+        "navigationBarTitleText": "申请",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/enterpriseInfo/index",
+      "style": {
+        "navigationBarTitleText": "企业信息"
+      }
+    },
+    {
+      "path": "pages/adviceFeedback/index",
+      "style": {
+        "navigationBarTitleText": "意见反馈"
+      }
+    },
+    {
+      "path": "pages/labour/labour-list",
+      "style": {
+        "navigationBarTitleText": "劳务管理",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/select-labour/select-labour",
+      "style": {
+        "navigationBarTitleText": "选择成员",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "完成",
+                "fontSize": 14,
+                "color": "#ffffff",
+                "key": "save"
+              }
+            ]
+          }
+        }
+      }
+    },
+
+    {
+      "path": "pages/labour/labour-user-details",
+      "style": {
+        "navigationBarTitleText": "人员信息",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue60e",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "edit"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/labour/labour-user-edit",
+      "style": {
+        "navigationBarTitleText": "编辑人员信息"
+      }
+    },
+    {
+      "path": "pages/labour/safety/safety-list",
+      "style": {
+        "navigationBarTitleText": "安全培训",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/labour/safety/safety-add",
+      "style": {
+        "navigationBarTitleText": "新建培训"
+      }
+    },
+    {
+      "path": "pages/labour/safety/safety-details",
+      "style": {
+        "navigationBarTitleText": "培训详情",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue60e",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "edit"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/labour/healthy/healthy-user-list",
+      "style": {
+        "navigationBarTitleText": "人员健康",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/labour/healthy/healthy-user-details",
+      "style": {
+        "navigationBarTitleText": "人员健康详情"
+      }
+    },
+    {
+      "path": "pages/labour/healthy/healthy-vehicle-list",
+      "style": {
+        "navigationBarTitleText": "车辆消毒"
+      }
+    },
+    {
+      "path": "pages/labour/healthy/healthy-vehicle-details",
+      "style": {
+        "navigationBarTitleText": "车辆消毒信息"
+      }
+    },
+    {
+      "path": "pages/epcPpp/schedule/view/index",
+      "style": {
+        "navigationBarTitleText": "进度管理"
+      }
+    },
+    {
+      "path": "pages/epcPpp/schedule/view/detail",
+      "style": {
+        "navigationBarTitleText": "进度任务",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "filter"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/schedule/view/taskDetail",
+      "style": {
+        "navigationBarTitleText": "进度任务详情"
+      }
+    },
+    {
+      "path": "pages/epcPpp/schedule/myTask/index",
+      "style": {
+        "navigationBarTitleText": "我领取的进度计划"
+      }
+    },
+    {
+      "path": "pages/epcPpp/schedule/myTask/assign",
+      "style": {
+        "navigationBarTitleText": "任务分配"
+      }
+    },
+    {
+      "path": "pages/epcPpp/schedule/myTask/assignHistory",
+      "style": {
+        "navigationBarTitleText": "任务分配记录"
+      }
+    },
+    {
+      "path": "pages/epcPpp/schedule/myTask/completeTask",
+      "style": {
+        "navigationBarTitleText": "完成任务"
+      }
+    },
+    {
+      "path": "pages/epcPpp/schedule/myTask/delayTaskPlan",
+      "style": {
+        "navigationBarTitleText": "延期解决方案"
+      }
+    },
+    {
+      "path": "pages/epcPpp/schedule/myTask/delayAllLinkTask",
+      "style": {
+        "navigationBarTitleText": "延后所有关联进度"
+      }
+    },
+    {
+      "path": "pages/epcPpp/schedule/myTask/advanceAllLinkTask",
+      "style": {
+        "navigationBarTitleText": "提前所有关联进度"
+      }
+    },
+    {
+      "path": "pages/epcPpp/schedule/analyze/index",
+      "style": {
+        "navigationBarTitleText": "进度分析",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "filter"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/notice/index",
+      "style": {
+        "navigationBarTitleText": "通知公告",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "filter"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/notice/add",
+      "style": {
+        "navigationBarTitleText": "新建通知公告"
+      }
+    },
+    {
+      "path": "pages/epcPpp/notice/detail",
+      "style": {
+        "navigationBarTitleText": "通知公告详情"
+      }
+    },
+    {
+      "path": "pages/schedule/statistics",
+      "style": {
+        "navigationBarTitleText": "进度统计",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "模型",
+                "fontSize": 14,
+                "color": "white",
+                "key": "bim",
+                "width": "50px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/schedule/step-1",
+      "style": {
+        "navigationBarTitleText": "进度填报"
+      }
+    },
+    {
+      "path": "pages/schedule/step-2",
+      "style": {
+        "navigationBarTitleText": "进度填报"
+      }
+    },
+    {
+      "path": "pages/equipment/list/index",
+      "style": {
+        "navigationBarTitleText": "设备台账",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/list/add",
+      "style": {
+        "navigationBarTitleText": "新建设备"
+      }
+    },
+    {
+      "path": "pages/equipment/list/detail",
+      "style": {
+        "navigationBarTitleText": "设备详情"
+      }
+    },
+    {
+      "path": "pages/equipment/maintenance/select-plan",
+      "style": {
+        "navigationBarTitleText": "设备保养计划",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "确定",
+                "fontSize": 14,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/maintenance/index",
+      "style": {
+        "navigationBarTitleText": "设备保养",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/maintenance/add",
+      "style": {
+        "navigationBarTitleText": "新建设备保养"
+      }
+    },
+    {
+      "path": "pages/equipment/maintenance/detailWaitMaintain",
+      "style": {
+        "navigationBarTitleText": "保养详情"
+      }
+    },
+    {
+      "path": "pages/equipment/maintenance/detailMaintain",
+      "style": {
+        "navigationBarTitleText": "保养详情"
+      }
+    },
+    {
+      "path": "pages/equipment/maintenance/detailWaitCheck",
+      "style": {
+        "navigationBarTitleText": "保养详情"
+      }
+    },
+    {
+      "path": "pages/equipment/maintenance/detail",
+      "style": {
+        "navigationBarTitleText": "保养详情"
+      }
+    },
+    {
+      "path": "pages/schedule/list",
+      "style": {
+        "navigationBarTitleText": "进度填报",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "开始任务",
+                "fontSize": 14,
+                "color": "white",
+                "key": "start",
+                "width": "90px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/schedule/add",
+      "style": {
+        "navigationBarTitleText": "新建进度"
+      }
+    },
+    {
+      "path": "pages/schedule/detail",
+      "style": {
+        "navigationBarTitleText": "进度详情"
+      }
+    },
+    {
+      "path": "pages/document/index",
+      "style": {
+        "navigationBarTitleText": "文档管理",
+        "enablePullDownRefresh": false,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue613",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "add"
+              },
+              {
+                "text": "\ue624",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "search"
+              }
+            ]
+          }
+        }
+      }
+    },
+
+    {
+      "path": "pages/environmentalMonitoring/list",
+      "style": {
+        "navigationBarTitleText": "环境监测"
+      }
+    },
+    {
+      "path": "pages/environmentalMonitoring/monit",
+      "style": {
+        "navigationBarTitleText": "环境监测"
+      }
+    },
+    {
+      "path": "pages/environmentalMonitoring/warning",
+      "style": {
+        "navigationBarTitleText": "预警列表"
+      }
+    },
+    {
+      "path": "pages/document/doc-file-list",
+      "style": {
+        "navigationBarTitleText": "文件夹名称",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue613",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "add"
+              },
+              {
+                "text": "排序",
+                "fontSize": 14,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "sort"
+              },
+              {
+                "text": "\ue624",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "search"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/document/document-add-folder",
+      "style": {
+        "navigationBarTitleText": "新建文件夹",
+        "enablePullDownRefresh": false,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "创建",
+                "fontSize": 14,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/document/select-document",
+      "style": {
+        "navigationBarTitleText": "选择位置",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "确定",
+                "fontSize": 14,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/document/upload-file",
+      "style": {
+        "navigationBarTitleText": "上传文件"
+      }
+    },
+    {
+      "path": "pages/document/file-search",
+      "style": {
+        "navigationBarTitleText": "搜索",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/document/file-detail",
+      "style": {
+        "navigationBarTitleText": "文件详情",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue60a",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "more"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/lease/list",
+      "style": {
+        "navigationBarTitleText": "设备租赁",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/lease/detail",
+      "style": {
+        "navigationBarTitleText": "租赁单详情",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "type": "menu"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/lease/add",
+      "style": {
+        "navigationBarTitleText": "新建租赁单",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "存为草稿",
+                "fontSize": 14,
+                "color": "white",
+                "key": "draft",
+                "width": "70px"
+              }
+            ]
+          }
+        }
+      }
+    },
+
+    {
+      "path": "pages/equipment/purchase/list",
+      "style": {
+        "navigationBarTitleText": "设备采购",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/purchase/add",
+      "style": {
+        "navigationBarTitleText": "新建采购单",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "存为草稿",
+                "fontSize": 14,
+                "color": "white",
+                "key": "draft",
+                "width": "70px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/equipment/purchase/detail",
+      "style": {
+        "navigationBarTitleText": "采购单详情",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "type": "menu"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/investment/confirmation/list",
+      "style": {
+        "navigationBarTitleText": "投资确认",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/investment/confirmation/build-add",
+      "style": {
+        "navigationBarTitleText": "新建建设费用确认单",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/epcPpp/investment/confirmation/total-add",
+      "style": {
+        "navigationBarTitleText": "新建总投资确认单",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/epcPpp/investment/confirmation/build-detail",
+      "style": {
+        "navigationBarTitleText": "建设费用确认单",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/epcPpp/investment/confirmation/total-detail",
+      "style": {
+        "navigationBarTitleText": "总投资确认单",
+        "enablePullDownRefresh": true
+      }
+    },
+
+    {
+      "path": "pages/epcPpp/quality/list",
+      "style": {
+        "navigationBarTitleText": "质量管理",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/quality/no-cancel-detail",
+      "style": {
+        "navigationBarTitleText": "质量问题详情"
+      }
+    },
+    {
+      "path": "pages/epcPpp/quality/cancel-detail",
+      "style": {
+        "navigationBarTitleText": "质量问题详情"
+      }
+    },
+    {
+      "path": "pages/epcPpp/quality/add",
+      "style": {
+        "navigationBarTitleText": "新建质量问题"
+      }
+    },
+    {
+      "path": "pages/epcPpp/quality/analysis",
+      "style": {
+        "navigationBarTitleText": "质量问题分析",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/safety/list",
+      "style": {
+        "navigationBarTitleText": "安全管理",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/safety/no-cancel-detail",
+      "style": {
+        "navigationBarTitleText": "安全问题详情"
+      }
+    },
+    {
+      "path": "pages/epcPpp/safety/cancel-detail",
+      "style": {
+        "navigationBarTitleText": "安全问题详情"
+      }
+    },
+    {
+      "path": "pages/epcPpp/safety/add",
+      "style": {
+        "navigationBarTitleText": "新建安全问题"
+      }
+    },
+    {
+      "path": "pages/epcPpp/safety/analysis",
+      "style": {
+        "navigationBarTitleText": "安全问题分析",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/select-location/select-location",
+      "style": {
+        "navigationBarTitleText": "选择位置",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "确定",
+                "fontSize": 14,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/partyConstruct/home/index",
+      "style": {
+        "navigationBarTitleText": "党建首页"
+      }
+    },
+    {
+      "path": "pages/epcPpp/partyConstruct/activityPreview/index",
+      "style": {
+        "navigationBarTitleText": "活动预告"
+      }
+    },
+    {
+      "path": "pages/epcPpp/partyConstruct/activityPreview/detail",
+      "style": {
+        "navigationBarTitleText": "活动预告详情"
+      }
+    },
+    {
+      "path": "pages/epcPpp/partyConstruct/activity/index",
+      "style": {
+        "navigationBarTitleText": "党建活动"
+      }
+    },
+    {
+      "path": "pages/epcPpp/partyConstruct/activity/detail",
+      "style": {
+        "navigationBarTitleText": "活动详情"
+      }
+    },
+    {
+      "path": "pages/epcPpp/partyConstruct/news/index",
+      "style": {
+        "navigationBarTitleText": "党建要闻"
+      }
+    },
+    {
+      "path": "pages/epcPpp/partyConstruct/news/detail",
+      "style": {
+        "navigationBarTitleText": "要闻详情"
+      }
+    },
+    {
+      "path": "pages/epcPpp/partyConstruct/data/index",
+      "style": {
+        "navigationBarTitleText": "党建资料",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/constructionDayLog/index",
+      "style": {
+        "navigationBarTitleText": "施工日志",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/constructionDayLog/add",
+      "style": {
+        "navigationBarTitleText": "添加施工日志",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "暂存",
+                "fontSize": 14,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/constructionDayLog/detail",
+      "style": {
+        "navigationBarTitleText": "施工日志详情",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\uE60e",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/constructionWeekLog/index",
+      "style": {
+        "navigationBarTitleText": "施工周报",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/constructionWeekLog/add",
+      "style": {
+        "navigationBarTitleText": "添加施工周报",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "暂存",
+                "fontSize": 14,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/constructionWeekLog/detail",
+      "style": {
+        "navigationBarTitleText": "施工周报详情",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\uE60e",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/supervisionDayLog/index",
+      "style": {
+        "navigationBarTitleText": "监理日志",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/supervisionDayLog/add",
+      "style": {
+        "navigationBarTitleText": "添加监理日志",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "暂存",
+                "fontSize": 14,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/supervisionDayLog/detail",
+      "style": {
+        "navigationBarTitleText": "监理日志详情",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\uE60e",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/supervisionWeekLog/index",
+      "style": {
+        "navigationBarTitleText": "监理周报",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/supervisionWeekLog/add",
+      "style": {
+        "navigationBarTitleText": "添加监理周报",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "暂存",
+                "fontSize": 14,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/informationManage/supervisionWeekLog/detail",
+      "style": {
+        "navigationBarTitleText": "监理周报详情",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\uE60e",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/document/index",
+      "style": {
+        "navigationBarTitleText": "资料管理"
+      }
+    },
+    {
+      "path": "pages/epcPpp/document/add",
+      "style": {
+        "navigationBarTitleText": "新建",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/epcPpp/document/detail",
+      "style": {
+        "navigationBarTitleText": "文件详情"
+      }
+    },
+    {
+      "path": "pages/epcPpp/home/progress/index",
+      "style": {
+        "navigationBarTitleText": "项目进度",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "模型",
+                "fontSize": 14,
+                "color": "white",
+                "key": "bim"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/home/unfinishedPlan/list",
+      "style": {
+        "navigationBarTitleText": "未完成进度计划",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "\ue607",
+                "fontSize": 27,
+                "color": "white",
+                "fontSrc": "/static/fonts/iconfont.ttf",
+                "key": "screen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/epcPpp/canvasSign/index",
+      "style": {
+        "navigationBarTitleText": "签名"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#909090",
+    "selectedColor": "#3C7EFF",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/home-hover.png"
+      },
+      {
+        "pagePath": "pages/application/application",
+        "text": "应用",
+        "iconPath": "static/img/application.png",
+        "selectedIconPath": "static/img/application-hover.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "通讯录",
+        "iconPath": "static/img/book.png",
+        "selectedIconPath": "static/img/book-hover.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "static/img/user-hover.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#496FE5",
+    "backgroundColor": "#f9f9f9",
+    "app-plus": {
+      "background": "#f9f9f9"
+    }
+  },
+  "condition": {
+    //模式配置，仅开发期间生效
+    "current": 0, //当前激活的模式(list 的索引项)
+    "list": [
+      // {
+      // 	"name": "", //模式名称
+      // 	"path": "pages/log/detail", //启动页面，必选
+      // 	"query": "" //启动参数，在页面的onLoad函数里面得到
+      // }
+    ]
+  }
+}

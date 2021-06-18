@@ -1,0 +1,39 @@
+@import '~@/styles/common';
+
+p {
+  display: inline-block;
+  vertical-align: middle;
+
+  >* {
+    display: inline-block;
+    vertical-align: center;
+    font-size: 13px;
+  }
+}
+
+@size: 18px;
+
+.status-icon {
+  width: @size;
+  height: @size;
+  border-radius: @size;
+  background-color: #aaa;
+  margin-right: 15px;
+
+  &.active {
+    background-color: @activeColor;
+  }
+
+  &.success {
+    background-color: @successColor;
+  }
+
+  &.danger {
+    background-color: @dangerColor;
+  }
+
+  &.warning {
+    background-color: @warningColor;
+  }
+
+}

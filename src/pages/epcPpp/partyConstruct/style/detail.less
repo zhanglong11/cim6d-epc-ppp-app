@@ -1,0 +1,39 @@
+@import '~@/styles/common.less';
+.main-body{
+  padding: 20rpx 30rpx 40rpx 30rpx;
+}
+h3{
+  text-align: center;
+  padding: 0 150rpx;
+}
+ul{
+  margin:40rpx 0;
+  padding: 0 40rpx;
+  display: flex;
+  justify-content: space-around;
+  li{
+    font-size: 14px;
+    span{
+      margin-right: 10rpx;
+    }
+  }
+}
+.content{
+  margin-top: 10rpx;
+  text-indent: 2em;
+  /deep/ img,image,uni-image{
+    max-width: 700rpx;
+    margin: 0 auto;
+  }
+}
+.imageContainer {
+  /deep/ uni-image {
+    width: 600rpx;
+    height: 300rpx;
+    margin: 0 auto;
+    display: block;
+  }
+}
+.disabled{
+  color: #999;
+}

@@ -1,0 +1,39 @@
+
+@import url('~@/styles/common.less');
+.tag-wrap {
+  margin: 0 -12px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &.column-2{
+    >li{
+      width: 258px;
+    }
+  }
+  > li {
+    padding: 0 10rpx;
+    text-align: center;
+    width: 165px;
+    height: 60px;
+    line-height: 60px;
+    background:rgba(223,223,223,0.7);
+    border-radius:2px;
+    color: #454545;
+    font-size: 12px;
+    margin: 0 0 14px 14px;
+    .ellipsis;
+    transition: all 0.4s;
+    &.active {
+      color: #3558C8;
+      background:rgba(197,210,252,1);
+    }
+  }
+  &.floor-select {
+    li {
+      width: 120px;
+      padding: 6px 0;
+      font-size: 11px;
+      margin: 0 0 16px 16px;
+    }
+  }
+}

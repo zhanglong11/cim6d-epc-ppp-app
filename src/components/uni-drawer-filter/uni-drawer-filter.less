@@ -1,0 +1,68 @@
+
+@import url('~@/styles/common.less');
+/deep/.uni-drawer__content {
+  display: flex;
+  flex-direction: column;
+}
+.drawer {
+  display: flex;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    font-weight: 800;
+    font-size: 14px;
+    height:68px;
+    background:rgba(238,238,238,1);
+    color: #757575;
+    .icon {
+      color: @h2FontColor;
+      font-size: 20px;
+    }
+  }
+  .content {
+    padding: 24px;
+    .label {
+      margin-bottom: 21px;
+      font-weight: normal;
+      color: #757575;
+      font-size: 13px;
+    }
+    .input {
+      border: 1px solid #ddd;
+      height: 64px;
+      line-height: 64px;
+      text-indent: 12px;
+      border-radius: 4px;
+    }
+    .input-holder {
+      color: #ccc;
+      font-size: 14px;
+    }
+    .item-line{
+      margin-bottom: 32px;
+      height: 2px;
+      background:rgba(241,241,241,1);
+    }
+  }
+  .foot {
+    padding: 26px 40px;
+    display: flex;
+    height: 138px;
+    background: #fff;
+    border-top: 1px solid @line;
+    /deep/.btn-wrap{
+      margin: 0 14px;
+      border-radius: 80px;
+      border-color: @headerColor;
+      color: @headerColor;
+      font-size: 14px;
+      &.primary{
+        background: @headerColor;
+        color: #fff;
+      }
+    }
+  }
+}

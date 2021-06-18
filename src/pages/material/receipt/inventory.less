@@ -1,0 +1,71 @@
+@import '~@/styles/common.less';
+@import '~@/styles/list.less';
+
+.uni-searchbar {
+  margin-top: 0;
+}
+
+.main{
+  border-radius: 0;
+  height: 100vh;
+  &:before{
+    content: none;
+  }
+  .card-body{
+    padding-top: 20rpx ;
+    padding-bottom: 20rpx;
+    .title{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card-info {
+  flex: 1;
+  width: 50%;
+  position: relative;
+
+ 
+
+  .flex-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    .flex-item{
+      padding: 0 10rpx;
+      display: flex;
+      max-width: 65%;
+
+      align-items: flex-start;
+      .flex-item-label{
+        flex-basis: auto;
+        white-space: nowrap;
+       
+      }
+      .flex-item-content{
+        .ellipsis
+      }
+
+    }
+  }
+ 
+
+}
+uni-checkbox{
+  /deep/.uni-checkbox-input{
+    width: 30rpx;
+    height: 30rpx;
+    &::before{
+      font-size: 30rpx;
+    }
+
+  }
+} 
+
+.btn-wrapper{
+  padding-top: 20rpx;
+  margin-bottom: 20rpx;
+
+}

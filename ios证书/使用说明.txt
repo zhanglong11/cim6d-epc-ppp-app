@@ -1,0 +1,13 @@
+ios
+124
+
+施工AppID
+wisdom.construction.app
+bimfishAppshigongDev.mobileprovision
+bimfishAppDev.p12
+
+
+精装修AppID
+wisdom.constructionjingzhuangxiu.app
+bimfishAppjingzhuangxiuDev.mobileprovision
+bimfishAppDev.p12

@@ -1,0 +1,107 @@
+.milestone-wrap {
+  width: 100vw;
+  background: #f8f8f8;
+  padding: 40px;
+  .content {
+    padding: 20px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 4px #fff;
+    > div {
+      h6 {
+        font-size: 14px;
+        height: 60px;
+      }
+      &:nth-child(n + 2) {
+        h6 {
+          position: relative;
+          width: 140px;
+          &:before {
+            position: absolute;
+            right: 0;
+            top: 0;
+            content: '';
+            width: 1px;
+            height: 100%;
+            background: #ccc;
+          }
+        }
+      }
+      &:first-child {
+        .list {
+          &:nth-child(2) {
+            .date {
+              &:before {
+                height: 70%;
+                top: 50%;
+              }
+            }
+          }
+        }
+      }
+      &:last-child {
+        .list {
+          &:last-child {
+            .date {
+              &:before {
+                height: 50%;
+              }
+            }
+          }
+        }
+      }
+      .list {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        font-size: 12px;
+        .date {
+          position: relative;
+          width: 140px;
+          padding: 20px 10px;
+          display: flex;
+          flex-direction: column;
+          &:before {
+            position: absolute;
+            right: 0;
+            top: 0;
+            content: '';
+            width: 1px;
+            height: 120%;
+            background: #ccc;
+          }
+          &:after {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -20px;
+            margin-right: -20px;
+            width: 40px;
+            height: 40px;
+            content: '';
+            border-radius: 50%;
+            background: #55ca86;
+          }
+          &.status-0 {
+            &:after {
+              background: #ccc;
+            }
+          }
+          &.status-1 {
+            &:after {
+              background: #3394fd;
+            }
+          }
+          &.status-2 {
+            &:after {
+              background: #55ca86;
+            }
+          }
+        }
+        .desc {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+}

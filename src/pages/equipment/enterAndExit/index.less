@@ -1,0 +1,40 @@
+@import '~@/styles/common.less';
+@import '~@/styles/list.less';
+
+.uni-searchbar {
+  margin: 28px 0 25px;
+}
+
+.card-info {
+  flex: 1;
+  width: 50%;
+  position: relative;
+
+  .flex-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .flex-left {
+      flex: 1 50%;
+    }
+    .uni-status {
+      margin-left: 20rpx;
+    }
+  }
+
+  .flex-item {
+    padding: 0 10rpx;
+    display: flex;
+    align-items: flex-start;
+
+    .flex-item-label {
+      flex-basis: auto;
+      white-space: nowrap;
+    }
+
+    .flex-item-content {
+      .ellipsis;
+    }
+  }
+}

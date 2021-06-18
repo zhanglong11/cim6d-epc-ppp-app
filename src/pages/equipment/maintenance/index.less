@@ -1,0 +1,90 @@
+@import '~@/styles/common.less';
+
+.uni-searchbar {
+  margin: 28px 0 25px;
+}
+
+.main-body {
+  font-size: @h2FontSize;
+
+  .uni-card {
+    font-size: 12px;
+    color: #4f6481;
+    line-height: 48px;
+    width: 700px;
+  }
+  .card-body {
+    padding: 31px;
+    color: @h2FontColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card-info {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      .title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 30rpx;
+      }
+      .flex-item {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        > p {
+          width: 45%;
+          > .label {
+            flex: 0 0 160rpx;
+          }
+          display: flex;
+        }
+      }
+      .info-item {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &:before {
+        content: '';
+        width: 5px;
+        height: 24rpx;
+        position: absolute;
+        top: 14rpx;
+        background-color: @headerColor;
+        border-radius: 3rpx;
+      }
+      &.commonly::before {
+        background-color: @successColor;
+      }
+
+      &.linJian::before {
+        background-color: @activeColor;
+      }
+
+      &.special::before {
+        background-color: @warningColor;
+      }
+    }
+
+    .title {
+      padding-left: 16rpx;
+      font-size: @h2FontSize;
+      font-weight: bold;
+      position: relative;
+      margin-bottom: 15px;
+      color: #020202;
+      .ellipsis;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    line-height: 76px;
+    justify-content: space-between;
+    padding: 0 31px;
+    color: #4f6481;
+  }
+}

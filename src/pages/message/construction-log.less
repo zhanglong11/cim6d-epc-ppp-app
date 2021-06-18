@@ -1,0 +1,64 @@
+.log-list {
+  margin-bottom: 40px;
+  li {
+    height: 156px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px 0px rgba(11, 75, 159, 0.13);
+    border-radius: 20px;
+    padding: 42px 40px;
+    font-size: 13px;
+    margin-top: 25px;
+    position: relative;
+    &.unread {
+      &::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 35px;
+        display: block;
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-color: #fc5556;
+        border-radius: 50%;
+      }
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+    }
+
+    p::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      margin-right: 17px;
+    }
+
+    p:first-child {
+      &:before {
+        background: url(~@/static/images/main/bell.png);
+        background-size: 100% 100%;
+        color: #496fe5;
+      }
+
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    p:last-child {
+      &:before {
+        background: url(~@/static/images/main/alarm.png);
+        background-size: 100% 100%;
+      }
+
+      font-size: 12px;
+    }
+
+    .time {
+      font-size: 12px;
+      color: rgba(91, 91, 91, 1);
+    }
+  }
+}

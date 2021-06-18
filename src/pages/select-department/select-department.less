@@ -1,0 +1,45 @@
+@import url('~@/styles/cui.less');
+.selectListContainer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  border-top: 1px red solid;
+  .labelContainer {
+    width: 550px;
+    .list {
+      flex: 1;
+      height: 100px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    .item {
+      flex: 0 0 auto;
+      border: 1px #d9d2d2 solid;
+      border-radius: 30px;
+      line-height: 40px;
+      height: 60px;
+      padding: 10px 40px;
+      margin: 5px;
+      position: relative;
+      .deleteIcon {
+        position: absolute;
+        top: -10px;
+        right: -5px;
+      }
+    }
+  }
+  .confirmBtn {
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+    .selectCount {
+      margin-left: 5px;
+    }
+  }
+}
+.treeWrapper {
+  max-height: calc(100vh - 136px);
+  padding: 0 25px;
+  position:relative;
+}

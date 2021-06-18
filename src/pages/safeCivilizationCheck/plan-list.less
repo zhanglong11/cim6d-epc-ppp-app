@@ -1,0 +1,30 @@
+@import url('~@/styles/common.less');
+@import url('~@/styles/main.less');
+
+.main {
+  padding-top: 0;
+
+  .uni-searchbar {
+    margin: 30px 0;
+  }
+
+  .list {
+    margin-bottom: 30px;
+    background-color: #fff;
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 35px;
+      font-size: 14px;
+      &:not(:last-child){
+        border-bottom: 1px solid rgba(241, 241, 241, 1);
+      }
+      p:last-child {
+        color: #666;
+        font-size: 13px;
+      }
+    }
+
+  }
+}

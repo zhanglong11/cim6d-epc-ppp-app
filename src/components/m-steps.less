@@ -1,0 +1,98 @@
+
+@import url('../styles/common.less');
+.steps__row {
+  padding: 0 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  .steps__row-text-container {
+    display: flex;
+    flex-direction: row;
+
+    .steps__row-text {
+      display: inline-flex;
+      flex: 1;
+      flex-direction: column;
+
+      &.steps__row-text-danger {
+        color: @dangerColor;
+      }
+
+      &.steps__row-text-success {
+        color: @successColor;
+      }
+      &.placeholder {
+        color: @placeholderColor;
+      }
+
+      .steps__row-title {
+        line-height: 48px;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+
+  .steps__row-container {
+    display: flex;
+    flex-direction: row;
+
+    .steps__row-line-item {
+      display: inline-flex;
+      flex-direction: row;
+      flex: 1;
+      height: 28px;
+      line-height: 28px;
+      align-items: center;
+      justify-content: center;
+
+      .steps__row-line {
+        flex: 1;
+        height: 2px;
+        background-color: #ccc;
+
+        &.steps__row-line-transparent {
+          background-color: transparent !important;
+        }
+
+        &.steps__row-line--before {
+          transform: translateX(-1px);
+        }
+
+        &.steps__row-line--after {
+          transform: translateX(1px);
+        }
+      }
+
+      &.item-checked {
+        .steps__row-line--after,
+        .steps__row-line--before {
+          background-color: #519FCE;
+        }
+
+        &.current-step {
+          .steps__row-line--after {
+            background-color: #ccc;
+          }
+        }
+      }
+
+      .steps__row-circle {
+        width: 24px;
+        height: 24px;
+        border-radius: 100px;
+        border: solid 4px #cccccc;
+        background-color: #ccc;
+        margin: 0px 6px;
+      }
+
+      &.item-checked {
+        .steps__row-circle {
+          border-color: #519FCE;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

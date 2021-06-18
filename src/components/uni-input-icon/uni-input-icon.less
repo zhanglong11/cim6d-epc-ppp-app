@@ -1,0 +1,32 @@
+.outWrapper{
+  display: flex;
+  border:1rpx #e4e4e4 solid;
+  align-items: center;
+  .iconWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1rpx #e4e4e4 solid;;
+  }
+  .inputWrapper{
+    padding-left: 20rpx;
+    flex: 1;
+    /deep/ .uni-input-placeholder{
+      font-size: 12px;
+      letter-spacing: 4rpx;
+    }
+    /deep/ .uni-input-input{
+    letter-spacing: 4rpx;
+     }
+  }
+  .btnWrapper{
+    margin-right: 40rpx;
+    display: flex;
+    align-items: center;
+    .btn{
+      font-size: 12px;
+      color:inherit;
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import '~@/styles/common.less';
+.main-body {
+  padding-bottom: 41px;
+  .card-title-outer {
+    width: 700rpx;
+    margin: 0 auto;
+    .title {
+      padding-top: 20rpx;
+      padding-left: 25rpx;
+      display: flex;
+      align-items: center;
+      .icon{
+        
+        margin-left: 20rpx;
+      }
+    }
+  }
+  .uni-card {
+    width: 700px;
+    position: relative;
+    .icon-clear{
+      position: absolute;
+      top: -26rpx;
+      right: 10rpx;
+      z-index: 20;
+    }
+  }
+  .placeholder {
+    color: @placeholderColor;
+  }
+
+  .uni-input,
+  textarea,
+  input {
+    font-size: 14px;
+  }
+
+  textarea {
+    width: auto;
+  }
+  .line {
+    margin: 30rpx 20rpx;
+    height: 2rpx;
+    background-color: @line;
+  }
+}
